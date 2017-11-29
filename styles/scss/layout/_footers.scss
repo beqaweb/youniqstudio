@@ -1,0 +1,31 @@
+.footer-site {
+  padding: 45px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    p {
+      font-size:14px;
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+  .list-contact {
+    &:before {
+      content: "";
+      background-image: url("../../img/icons/envelope.png");
+      float: left;
+      width: 62px;
+      height: 41px;
+      display: block;
+    }
+    li {
+      margin-left: 90px;
+      a {
+        font-size: 21px;
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}

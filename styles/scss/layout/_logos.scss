@@ -1,0 +1,31 @@
+.section-logos {
+  padding-top: 111.42px;
+  .container {
+
+  }
+}
+.logos-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  background-color: #fafafa;
+  position: relative;
+  margin-right: 1.283%;
+  margin-bottom: 1.283%;
+  overflow: hidden;
+  width: calc((100%/3) - 0.8547008547008547% );
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    transition: all cubic-bezier(0.07, 0.51, 0.48, 0.9) 0.5s;
+  }
+  &:hover img{
+      transform: scale(1.1);
+      filter:  blur(3px);
+  }
+}
