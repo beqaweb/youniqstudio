@@ -1,0 +1,39 @@
+@import "compass/reset";
+@import "compass/css3";
+.admin-section {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eeeeee;
+  height: 100vh;
+  .container {
+    height: 95vh;
+    padding: 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tab-names {
+    width: 20%;
+    height: 100%;
+    ul {
+       padding: 10px 0;
+      li {
+        padding: 20px 10px;
+        font-size: 15px;
+        cursor: pointer;
+        &:not(.li-active):hover {
+          background-color: #f4f4f4;
+        }
+        &.li-active,
+        &:active {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .tab-content {
+    overflow-y: auto;
+    width: 80%;
+    background-color: #ffffff;
+  }
+}

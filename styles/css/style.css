@@ -178,6 +178,11 @@ body {
   transform: scale(1.1);
 }
 
+.visit {
+  color: #7b2d91 !important;
+  transform: scale(1.1) !important;
+}
+
 .header-small .site-header {
   padding: 15px 0;
 }
@@ -209,12 +214,23 @@ body {
   border: none;
 }
 
+.turn-btn {
+  transform: rotate(90deg);
+}
+.turn-btn span {
+  background-color: #77328a !important;
+}
+
+.navbar-toggler {
+  transition: .2s;
+  padding: 0;
+}
 .navbar-toggler span {
   height: 3px;
   width: 30px;
   display: block;
   margin-bottom: 6px;
-  background-color: #7b2d91;
+  background-color: #000000;
 }
 .navbar-toggler span:last-child {
   margin-bottom: 0px;
@@ -250,16 +266,16 @@ body {
   text-decoration: none;
 }
 
-.section-logos {
+.section-works {
   padding-top: 111.42px;
 }
 
-.logos-list {
+.item-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.logo {
+.item {
   background-color: #fafafa;
   position: relative;
   margin-right: 1.283%;
@@ -267,16 +283,32 @@ body {
   overflow: hidden;
   width: calc((100%/3) - 0.8547008547008547% );
 }
-.logo:nth-child(3n + 3) {
+.item:nth-child(3n + 3) {
   margin-right: 0;
 }
-.logo img {
+.item .item-body {
+  height: 0;
+  width: 100%;
+  padding-top: 80.26315789473684%;
+  position: relative;
+}
+.item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.item img {
   max-width: 100%;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   vertical-align: middle;
   transition: all cubic-bezier(0.07, 0.51, 0.48, 0.9) 0.5s;
 }
-.logo:hover img {
+.item:hover img {
   transform: scale(1.1);
   filter: blur(3px);
 }
@@ -310,13 +342,13 @@ body {
     margin-right: 0;
   }
 
-  .logo {
+  .item {
     width: calc((100% / 2) - 0.8547008547008547%);
   }
-  .logo:nth-child(3n + 3) {
+  .item:nth-child(3n + 3) {
     margin-right: 1.283%;
   }
-  .logo:nth-child(2n + 2) {
+  .item:nth-child(2n + 2) {
     margin-right: 0;
   }
 
@@ -364,17 +396,17 @@ body {
     margin-right: 0;
   }
 
-  .logos-list {
+  .item-list {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
   }
 
-  .logo {
+  .item {
     width: calc(100%);
     margin-right: 0;
   }
-  .logo:nth-child(2n + 2) {
+  .item:nth-child(2n + 2) {
     margin-right: 0;
   }
 

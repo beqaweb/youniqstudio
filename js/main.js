@@ -17,6 +17,9 @@ window.addEventListener('load', function () {
     siteHeaderHeight = Number(getComputedStyle(document.querySelector('header.site-header')).height.split('px')[0]);
 
     adjustHeightOnScroll();
+    $('#burger').on('click', function() {
+        $(this).toggleClass('turn-btn');
+    })
 });
 
 window.addEventListener('scroll', function () {

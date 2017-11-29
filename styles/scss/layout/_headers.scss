@@ -60,7 +60,10 @@
     }
   }
 }
-
+.visit {
+  color: #7b2d91 !important;
+  transform: scale(1.1) !important;
+}
 .header-small {
   .site-header {
     padding: 15px 0;
@@ -91,13 +94,21 @@
 .navbar-light .navbar-toggler {
   border: none;
 }
+.turn-btn {
+  transform: rotate(90deg);
+  span {
+    background-color: #77328a !important;
+  }
+}
 .navbar-toggler {
+  transition: .2s;
+  padding: 0;
  span {
    height: 3px;
    width: 30px;
    display: block;
    margin-bottom: 6px;
-   background-color: #7b2d91;
+   background-color: #000000;
    &:last-child {
      margin-bottom: 0px;
    }
