@@ -10,6 +10,7 @@
   <!-- Main styles -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Fonts-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
@@ -23,10 +24,61 @@
           <li>web</li>
           <li>advertising</li>
           <li>other</li>
+          <li><i class="fa fa-plus" aria-hidden="true"></i></li>
         </ul>
       </div>
       <div class="tab-content">
-
+        <div class="add-work">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <form class="new-work">
+                <h2>Картинка роботи</h2>
+                <div class="main-img">
+                  <div class="wrap-img-logo">
+                    <img src="../img/ident.jpg" alt="">
+                  </div>
+                 <button type="button" class="btn btn-light"><i class="fa fa-plus" aria-hidden="true"></i>
+                 </button>
+                </div>
+                <h2>Картинки призинтації</h2>
+                <ul class="presentation-img">
+                  <li class="wrap-img">
+                    <button type="button" class="btn btn-dark"> <i class="fa fa-plus" aria-hidden="true"></i></button>
+                  </li>
+                  <li class="wrap-img">
+                    <img src="../img/ident.jpg" alt="">
+                  </li>
+                </ul>
+                <div class="button-bar">
+                  <button type="submit" class="btn btn-outline-success">GO</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="works-redactor">
+          <h2>Всі роботи</h2>
+          <ul class="works">
+            <li class="work">
+              <ul class="work-list">
+                <li class="wrap-img-logo">
+                  <img src="../img/ident.jpg" alt="">
+                </li>
+                <li class="wrap-img">
+                  <img src="../img/ident.jpg" alt="">
+                </li>
+              </ul>
+              <div class="button-bar">
+                <button type="button" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-outline-dark"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-warning"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
