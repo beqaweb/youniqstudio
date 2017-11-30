@@ -69,6 +69,37 @@ button, img {
   object-fit: cover;
 }
 
+#loginModal {
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#loginModal .modal-body_ {
+  width: 400px;
+  padding: 20px 30px;
+  background: #FFF;
+}
+#loginModal .modal-body_ .modal-content_ form {
+  display: flex;
+  flex-direction: column;
+}
+#loginModal .modal-body_ .modal-content_ form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+#loginModal .modal-body_ .modal-content_ form .input-group {
+  margin-bottom: 20px;
+}
+
 .admin-section {
   font-family: 'Open Sans', sans-serif;
   background-color: #eeeeee;
