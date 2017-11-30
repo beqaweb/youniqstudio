@@ -4,6 +4,24 @@
 
   }
 }
+.section-present {
+  padding-top: 111.42px;
+  .container {
+    .present-list {
+      display: flex;
+      flex-direction: column;
+      .present {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 .item-list {
   display: flex;
   flex-wrap: wrap;
