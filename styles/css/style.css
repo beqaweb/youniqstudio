@@ -280,6 +280,23 @@ body {
   padding-top: 111.42px;
 }
 
+.section-present {
+  padding-top: 111.42px;
+}
+.section-present .container .present-list {
+  display: flex;
+  flex-direction: column;
+}
+.section-present .container .present-list .present {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.section-present .container .present-list .present img {
+  max-width: 100%;
+  width: 100%;
+}
+
 .item-list {
   display: flex;
   flex-wrap: wrap;
